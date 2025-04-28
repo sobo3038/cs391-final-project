@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
+// Styled card container for displaying the joke
 const Card = styled.div`
   max-width: 600px;
   margin: 20px auto;
@@ -13,6 +14,7 @@ const Card = styled.div`
   text-align: center;
 `;
 
+// Styled button for fetching a new joke
 const Button = styled.button`
   margin-top: 10px;
   padding: 10px 15px;
@@ -22,15 +24,20 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+// RandomJokeCard component - fetches and displays a random dad joke
+// Made by Sofia Boada
 const RandomJokeCard = () => {
+  // joke: stores the current joke text
   const [joke, setJoke] = useState('');
 
+  // fetchJoke: fetches a new random joke from the icanhazdadjoke API
   const fetchJoke = async () => {
     const res = await fetch('https://icanhazdadjoke.com/', {headers: { Accept: 'application/json' }});
     const data = await res.json();
     setJoke(data.joke);
   };
 
+  // useEffect: fetch a joke once when the component mounts
   useEffect(() => { fetchJoke(); }, []);
 
   return (

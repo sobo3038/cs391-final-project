@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// Define a styled header element for the top of the page
 const StyledHeader = styled.header`
     background-color: lightskyblue;
     color: white;
@@ -13,6 +14,8 @@ const StyledHeader = styled.header`
 
 `;
 
+// Header component - renders the website's main title
+// Made by Abdulmalik Alamoudi
 export default function Header() {
     return (
 
