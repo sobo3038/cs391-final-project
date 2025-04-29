@@ -12,7 +12,7 @@ const SearchContainer = styled.div`
 `;
 
 // JokeSearch component - allows user to search for jokes based on a keyword
-// Made by Francisco Jose Miguel
+// Made by Francisco Jose Moguel
 const JokeSearch = () => {
   // term: stores the current search input from the user
  const [term, setTerm] = useState('');
