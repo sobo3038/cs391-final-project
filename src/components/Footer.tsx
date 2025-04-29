@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
     color: white;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     @media screen and (max-width: 1000px){
         text-align: center;
         width: 100%;}
@@ -17,7 +17,7 @@ const StyledFooter = styled.footer`
 export default function Footer() {
     return (
         <StyledFooter>
-            <p> All rights reserved by Boston University CS391 &copy; 2025 </p>
+            <h3> All rights reserved by Boston University CS391 &copy; 2025 </h3>
         </StyledFooter>
     );
 }

@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
     color: white;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     @media screen and (max-width: 1000px){
         text-align: center;
         width: 100%;}
